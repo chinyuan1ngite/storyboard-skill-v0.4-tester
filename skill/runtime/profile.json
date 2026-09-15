@@ -1,0 +1,56 @@
+{
+  "profile": "production_candidate_tester_v04",
+  "status": "PRODUCTION_CANDIDATE_STRUCTURALLY_VALIDATED",
+  "real_video_status": "REAL_VIDEO_EVALUATION_SKIPPED",
+  "production_default": false,
+  "router_tool": "routing/route_candidate.py",
+  "router_contract": "routing/storyboard-routing.md",
+  "base_model_files": [
+    "SKILL.md",
+    "core/storyboard-core.md",
+    "core/generation-contract.md",
+    "core/storyboard-ir.md"
+  ],
+  "capability_files": {
+    "dialogue": "capabilities/dialogue.md",
+    "group-dialogue": "capabilities/group-dialogue.md",
+    "action-movement": "capabilities/action-movement.md",
+    "emotion-performance": "capabilities/emotion-performance.md",
+    "suspense-reveal": "capabilities/suspense-reveal.md",
+    "establishing-transition": "capabilities/establishing-transition.md",
+    "spatial-continuity": "capabilities/spatial-continuity.md",
+    "audio-transition": "capabilities/audio-transition.md",
+    "cinematic-high-risk": "capabilities/cinematic-high-risk.md"
+  },
+  "ir_schema_tool_only": "schemas/storyboard-ir.schema.json",
+  "generation_ready_validator_tool_only": "scripts/validate_storyboard_ir.py",
+  "adapter_contract_tool_only": "adapters/seedance-2.md",
+  "adapter_model_files": [],
+  "adapter_tool_files": [
+    "adapters/render_seedance_2.py",
+    "_runtime/seedance_renderer.py"
+  ],
+  "shared_tool_dependencies": [
+    "_runtime/routing_selector.py",
+    "_runtime/ir_validation.py",
+    "_runtime/storyboard-ir.draft.schema.json"
+  ],
+  "segment_contract_tool_only": "adapters/generation-segment.md",
+  "dependency_manifest": "candidate_dependency_manifest.json",
+  "current_segment_strategy": "ONE_SHOT_FALLBACK",
+  "allowed_future_segment_shapes": ["1_SHOT_TO_1_SEGMENT", "N_SHOTS_TO_1_SEGMENT"],
+  "default_model_exclusions": [
+    "legacy/**",
+    "tests/**",
+    "reports/**",
+    "adapters/**",
+    "routing/**",
+    "runtime/**",
+    "schemas/**",
+    "scripts/**",
+    "_runtime/**",
+    "qa/**",
+    "workflow/**",
+    "peace-star/**"
+  ]
+}

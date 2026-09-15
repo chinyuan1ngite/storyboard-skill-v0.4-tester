@@ -1,0 +1,34 @@
+{
+  "package_name": "storyboard-skill-v0.4-tester",
+  "package_version": "v0.4 Production Candidate Tester Release",
+  "git_commit": "181e86eec9d87ae4689d96cdc6a6fba32a27ea64",
+  "build_timestamp": "2026-08-29T16:29:28.8276517+08:00",
+  "source_release": "v0.4-candidate-release",
+  "status": [
+    "TESTER_DELIVERY_PACKAGE_READY",
+    "PRODUCTION_CANDIDATE_STRUCTURALLY_VALIDATED",
+    "DEPENDENCY_CLOSURE_PASS",
+    "REAL_VIDEO_EVALUATION_SKIPPED"
+  ],
+  "production_ready": false,
+  "python_requirement": ">=3.10",
+  "validated_python": "3.14.3",
+  "validated_platform": "Windows",
+  "third_party_dependencies": [],
+  "required_environment_variables": [],
+  "included_sections": [
+    "documentation",
+    "skill",
+    "examples",
+    "templates",
+    "environment-check",
+    "package-verification",
+    "toolchain-smoke-test",
+    "manifests"
+  ],
+  "skill_dependency_manifest_sha256": "090815A1890BA3359F92C278A0702BC22C0ADA5E8A96851BA2F726CDFC8EF578",
+  "delivery_package_sha256": null,
+  "delivery_package_sha256_reason": "ZIP cannot contain a stable checksum of itself.",
+  "delivery_package_sha256_sidecar": "storyboard-skill-v0.4-tester.zip.sha256",
+  "known_limitations_reference": "LIMITATIONS.md"
+}

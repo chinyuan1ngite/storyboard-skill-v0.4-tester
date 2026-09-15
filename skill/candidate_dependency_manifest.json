@@ -1,0 +1,231 @@
+{
+  "manifest_version": "candidate-dependency-manifest/0.4-phase9.1",
+  "package": "storyboard-skill-v0.4-tester/skill",
+  "package_status": [
+    "PRODUCTION_CANDIDATE_STRUCTURALLY_VALIDATED",
+    "DEPENDENCY_CLOSURE_PASS",
+    "REAL_VIDEO_EVALUATION_SKIPPED",
+    "TESTER_DELIVERY_PACKAGE_READY"
+  ],
+  "production_default": false,
+  "model_context_file_count": 13,
+  "external_runtime_dependency_count": 0,
+  "dependencies": [
+    {
+      "path": "SKILL.md",
+      "role": "candidate entrypoint",
+      "version": "v0.4-production-candidate",
+      "sha256": "9CB00DA4481AAF50183271976FE374F6762780BF6BEB65C868860ADB3EDFC10C",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "core/storyboard-core.md",
+      "role": "director invariant authority",
+      "version": "v0.4-production-candidate",
+      "sha256": "4FDC35951EB9DF78FC844AF4121EBFB4746C256D5411AAAD29DDF12863E50D21",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "core/generation-contract.md",
+      "role": "generation contract authority",
+      "version": "v0.4-production-candidate",
+      "sha256": "7B19FE9E7DB327C770D7E3DFB0C7D929165D13E64201A1AD689CB494791EA8BB",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "core/storyboard-ir.md",
+      "role": "Storyboard IR semantic authority",
+      "version": "v0.4-production-candidate",
+      "sha256": "CAD66B58D4F34F5D720EB497E273D5312167CA7BD1B8FA550A2D9B7C340F9C41",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/dialogue.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "4D93B49FC4ACCAE004AD4E43B1B77037E814017255DEFCEF9F1C487CA4269812",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/group-dialogue.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "89D225F8E19B10FA76FEEF46EA9B85DDDCE9FAFA470A566A5D2979DF70E01DD9",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/action-movement.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "3519BA32793AD8CA5778827D53D184CB423D579B96E0F1B9FF5725C526364921",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/emotion-performance.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "638C82C08EB572831517D95156A63AB52068A30B51183D070C6589EF3337C57D",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/suspense-reveal.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "4779F48BB7E4487B5AE6126567D43409E4F7BA0D7C0AE3271225C018B3E64FD3",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/establishing-transition.md",
+      "role": "conditional scene capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "0DE91F50ED7F962425652382A6ABD1C3C0394EAC3670430ABCD7CD7105E2CDC8",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/spatial-continuity.md",
+      "role": "conditional narrow capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "8B506510FE147195FA9D9B83175C155B4A571AF7433369B66F980F2E05FE1C3B",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/audio-transition.md",
+      "role": "conditional narrow capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "3BD81C6E2094D6AEAFE581A0054A5720AD3204191CB5D4EAA40DF6CC6BAF4595",
+      "model_context": true,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "capabilities/cinematic-high-risk.md",
+      "role": "optional high-risk capability",
+      "version": "v0.4-production-candidate",
+      "sha256": "D7D1EE340246E40F964A79C230AE5A2FAF415F78ECE862E4F4B8AE5ED0A856FD",
+      "model_context": true,
+      "required_for": ["optional"]
+    },
+    {
+      "path": "routing/route_candidate.py",
+      "role": "release route wrapper",
+      "version": "tester-path-wrapper-v1",
+      "sha256": "BF3D6EB7F32E2A493AA1F61C50516BB6DB360CCBE0D1755D2E26489FD7F8A420",
+      "model_context": false,
+      "required_for": ["routing"]
+    },
+    {
+      "path": "_runtime/routing_selector.py",
+      "role": "frozen deterministic routing selector implementation",
+      "version": "phase7.5-selector-frozen-for-phase9.1",
+      "sha256": "1700142E3913C9EE09EFE939B87549B529F7E7C36D42DEB075093C7918DA5997",
+      "model_context": false,
+      "required_for": ["routing"],
+      "frozen_from": "phase7.5/routing-selector",
+      "source_sha256": "0794D528996C8D3AE33C9782F8B52801CBD388C59E7F5442C9EEEAAB38C12576"
+    },
+    {
+      "path": "routing/storyboard-routing.md",
+      "role": "routing contract documentation",
+      "version": "v0.4-production-candidate",
+      "sha256": "CC72B29CAE105124F67AD2599FBF97E70FC9BB788BCC45DBE41B7D6198166E40",
+      "model_context": false,
+      "required_for": ["optional"]
+    },
+    {
+      "path": "schemas/storyboard-ir.schema.json",
+      "role": "Candidate IR structural schema",
+      "version": "storyboard-ir/0.4-production-candidate",
+      "sha256": "5F9E547C9553EACEC1CD3369D0EE9F33C25804B621DBF24F88AB690070F01229",
+      "model_context": false,
+      "required_for": ["validation", "adapter"]
+    },
+    {
+      "path": "scripts/validate_storyboard_ir.py",
+      "role": "Generation Ready release validator wrapper",
+      "version": "tester-path-wrapper-v1",
+      "sha256": "83A38226011B00369527EFD2DD3C7FADA3B7B121463BF53BD1BB4F00177C7C2D",
+      "model_context": false,
+      "required_for": ["validation", "adapter"]
+    },
+    {
+      "path": "_runtime/ir_validation.py",
+      "role": "frozen structural and Generation Ready validation implementation",
+      "version": "phase7-validator-frozen-for-phase9.1",
+      "sha256": "61DABFF4E5A1355E2D3A613CF6D588466205D884E05F2BA96DADCA84D4A79CA6",
+      "model_context": false,
+      "required_for": ["validation", "adapter"],
+      "frozen_from": "phase7/generation-ready-validator",
+      "source_sha256": "61DABFF4E5A1355E2D3A613CF6D588466205D884E05F2BA96DADCA84D4A79CA6"
+    },
+    {
+      "path": "_runtime/storyboard-ir.draft.schema.json",
+      "role": "frozen compatibility schema used in-memory by Generation Ready validation",
+      "version": "storyboard-ir-draft/0.1-shadow-frozen-for-phase9.1",
+      "sha256": "56D010F6F871C7B1C3C98AE8B3750BEECC68791022C4E9F97AF58D0D07296F06",
+      "model_context": false,
+      "required_for": ["validation", "adapter"],
+      "frozen_from": "phase7/storyboard-ir-draft-schema",
+      "source_sha256": "56D010F6F871C7B1C3C98AE8B3750BEECC68791022C4E9F97AF58D0D07296F06"
+    },
+    {
+      "path": "adapters/render_seedance_2.py",
+      "role": "deterministic Candidate Adapter wrapper",
+      "version": "tester-path-wrapper-v1",
+      "sha256": "4C7F4F7888032E344CE00933AC918C128EAA0AAA63459B3886C55F19567D9AED",
+      "model_context": false,
+      "required_for": ["adapter"]
+    },
+    {
+      "path": "_runtime/seedance_renderer.py",
+      "role": "frozen deterministic Seedance prompt renderer implementation",
+      "version": "phase8-renderer-frozen-for-phase9.1",
+      "sha256": "9A3EAC55F8CEE8CE478FF16850982BF499A037D0BF10553854D7CC9CB0F8DEE9",
+      "model_context": false,
+      "required_for": ["adapter"],
+      "frozen_from": "phase8/deterministic-seedance-renderer",
+      "source_sha256": "9AB6B2880A62FEE9F6A439B4550A21FE376E30930F20CFAF6B616E85ABABE9C0"
+    },
+    {
+      "path": "adapters/seedance-2.md",
+      "role": "Adapter authority boundary documentation",
+      "version": "v0.4-production-candidate",
+      "sha256": "34C427807F44192C833DC5755796C525F807AC8183163B59D872F5DD0377F459",
+      "model_context": false,
+      "required_for": ["optional"]
+    },
+    {
+      "path": "adapters/generation-segment.md",
+      "role": "Generation Segment abstraction documentation",
+      "version": "v0.4-production-candidate",
+      "sha256": "878F1BC1539B639F50A5D87E72353E46D9AECFEC4049947E5A8EBCFD1715A8E9",
+      "model_context": false,
+      "required_for": ["optional"]
+    },
+    {
+      "path": "runtime/profile.json",
+      "role": "release runtime profile",
+      "version": "tester-path-profile-v1",
+      "sha256": "1F541E56A2FCB4039B67F503AE8E3FC502A92C59400A47AECC89527279D95933",
+      "model_context": false,
+      "required_for": ["optional"]
+    },
+    {
+      "path": "runtime/trace_candidate_runtime.py",
+      "role": "rule-context trace tool",
+      "version": "tester-path-wrapper-v1",
+      "sha256": "EFDE3BEAFA29A683A5ACE249051F4772805081BFA47EDF0A55D7683BA8A88035",
+      "model_context": false,
+      "required_for": ["optional"]
+    }
+  ]
+}

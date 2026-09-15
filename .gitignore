@@ -1,0 +1,14 @@
+# Generated storyboard outputs may contain private scripts or user assets.
+output/
+
+# Python runtime artifacts.
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local credentials and machine-specific files.
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

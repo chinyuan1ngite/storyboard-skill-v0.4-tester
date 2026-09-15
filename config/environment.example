@@ -1,0 +1,13 @@
+# REQUIRED
+# Current release requires no secret or API environment variables.
+
+# RECOMMENDED when terminal encoding is uncertain
+# PYTHONUTF8=1
+# PYTHONIOENCODING=utf-8
+# PYTHONDONTWRITEBYTECODE=1
+
+# OPTIONAL
+# None.
+
+# Seedance video generation is external to this package.
+# Do not put credentials in this file.
